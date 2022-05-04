@@ -76,6 +76,11 @@ public class ServerManager : MonoBehaviourPunCallbacks
         mesajYazdir(PhotonNetwork.NetworkStatisticsToString());
     }
 
+    public void istatistikSifirla()
+    {
+        PhotonNetwork.NetworkStatisticsReset();
+    }
+
     public void pingGetir()
     {
         //mesajYazdir(PhotonNetwork.GetPing().ToString());
